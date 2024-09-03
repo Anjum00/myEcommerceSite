@@ -1,0 +1,72 @@
+.active {
+    color: rgb(148, 239, 209);
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid;
+    border-color: #FF3D00 transparent;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+  .flower-animation {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .flower {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('flower.png'); /* Replace with your flower image */
+    background-size: cover;
+    opacity: 0;
+    animation: flowerFall 5s ease-in-out forwards;
+  }
+  
+  @keyframes flowerFall {
+    0% {
+      top: -10%;
+      left: calc(100% * var(--random-position));
+      opacity: 1;
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      top: 110%;
+      left: calc(100% * var(--random-position));
+      opacity: 0;
+      transform: translateY(100%) rotate(720deg);
+    }
+  }
+  
+
+/* Login css */
+
