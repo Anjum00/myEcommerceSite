@@ -6,5 +6,6 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000, // Specify your desired port number here
+    base: '/myEcommerceSite/',
   },
 })
