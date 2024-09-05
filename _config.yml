@@ -1,0 +1,27 @@
+# _config.yml
+
+# Specify the source directory
+source: C:\Users\Admin\Desktop\Git Uploads\myEcommerceSite>
+
+# Set your Jekyll theme (if you're using one)
+theme: jekyll-theme-primer
+
+# List any plugins you want to use
+plugins:
+  - jekyll-github-metadata
+  - jekyll-seo-tag
+  # Add other plugins as needed
+
+# Site settings
+title: My Ecommerce Site
+description: >- # this means to ignore newlines until "baseurl:"
+  A description of your site
+baseurl: "" # the subpath of your site, if applicable
+url: "https://Anjum00.github.io" # the base hostname & protocol for your site
+
+# Exclude files or directories from the build process
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle
